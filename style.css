@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/*----------------- profile----------------- */
+.profile {
+    position: relative;
+    padding-top: 3.5rem;
+
+}
+
+.profile__container {
+    row-gap: 2rem;
+}
+
+.profile__data {
+    display: grid;
+    text-align: center;
+}
+
+.profile__perfil img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 1.5rem;
+    transition: all .3s;
+
+}
+ 
+/* .profile__border {
+    justify-self: center;
+    width: 115px;
+    height: 115px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 0.75rem;
+} */
+
+.profile__profession {
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.profile__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.75rem;
+}
+
+.profile__social-link {
+    font-size: 1.25rem;
+    transition: .3s;
+    text-decoration: none;
+    color: black;
+}
+
+.profile__social-link:hover {
+    color: rgb(55, 178, 235);
+}
+
+.profile__info p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.profile__buttons,
+.profile__buttons-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile__buttons {
+    column-gap: 1rem;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background: rgb(36, 100, 219);
+    color: #fff;
+    padding: 1.15rem;
+    border-radius: .5rem;
+    transition: .3s;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: gray
+}
+
+.button i {
+    font-size: 1.45rem;
+}
+
+.button-gray {
+    background-color: rgb(218, 211, 211);
+    color: black;
+}
+
+/* ----------------filter tabs---------------- */
+
+.filters__content {
+    margin: 2rem 0 2.5rem;
+    background-color: rgb(218, 211, 211);
+    padding: .375rem;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: .5rem;
+}
+
+.filters__button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: .75rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.filters__button:hover {
+    background-color: white;
+}
+
+.projects__card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.projects__card img {
+    width: 100%;
+    height: 100%;
+    opacity: 85%;
+    filter: brightness(50%);
+}
+
+.projects__modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    display: grid;
+    align-items: flex-end;
+    padding: 1.5rem 1.25rem;
+    transition: .3s;
+}
+
+.projects__subtitle,
+.projects__title {
+    color: white;
+}
+
+.projects__title {
+    margin-bottom: .75rem;
+
+}
+
+.projects__button {
+    padding: .5rem;
+
+}
+
+.projects__card:hover .projects__modal {
+    bottom: 0;
+}
+
+
+/* --------------------skills-------------------------- */
+
+.skills__content {
+    row-gap: 3.5rem;
+}
+
+.skills__title {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills__box {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.skills__group {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.skills__group2 {
+    display: grid;
+    align-content: space-evenly;
+}
+
+.skills__data {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.skills__data i {
+    font-size: 1rem;
+    color: rgb(55, 178, 235);
+}
+
+.skills__name {
+    font-size: 16px;
+    font-weight: 500;
+    list-style: 18px;
+}
+
+.skills--level {
+    font-size: 14px;
+    opacity: 60%;
+}
+
+/*------------------- Hide and show project and skills --------------------*/
+
+.filters [data-content] {
+    display: none;
+}
+
+.filters__active[data-content] {
+    display: grid;
+}
+
+.filter-tab-active {
+    background-color: #fff
+}
+
+/* -----------footer------------------- */
+
+.footer__copy {
+    display: block;
+    margin: 2.5rem 0 2rem;
+    text-align: center;
+    font-size: small;
+    color: gray
+}
+
+/* -----------Theme button--------------- */
+
+.change-theme {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.change-theme:hover {
+    color: rgb(55, 178, 235);
+
+}
+
+/* --------------BreakPoints--------------- */
+
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left: 1rem;
+        row-gap: 1rem;
+    }
+
+    .profile__info {
+        column-gap: 1.5rem;
+    }
+
+    .profile__buttons {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .skills__box {
+        column-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .projects__content {
+        grid-template-columns: 332px;
+        justify-content: center;
+    }
+
+    .filters__content {
+        width: 332px;
+        margin: 3rem auto;
+    }
+}
+
+@media screen and (min-width: 776px) {
+
+    .projects__content,
+    .skills__content {
+        grid-template-columns: repeat(2, 332px);
+    }
+
+    .skills__content {
+        justify-content: center;
+        column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .change-theme {
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+
+    .profile {
+        padding-top: 4rem;
+    }
+
+    .profile__buttons {
+        column-gap: 2rem;
+    }
+
+    .projects__content {
+        gap: 2rem 3rem;
+    }
+
+    .projects__modal {
+        padding: 1.5rem;
+    }
+
+    .skills__title {
+        margin-bottom: 2.5rem;
+    }
+
+    .footer__copy{
+        margin: 4.5rem 0 2.5rem;
+    }
+
+}

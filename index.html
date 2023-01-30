@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------------------- CSS------------------------------------>
+    <link rel="stylesheet" href="style.css">
+
+    <!-------------------remix icon -------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+
+    <!-------------------- header profile-------------------------->
+    <header class="profile container">
+
+        <!------ Theme button------ -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <!-- insert img  -->
+                        <img src="logo.png" alt="">
+                    </div>
+                </div>
+
+                <h2 class="profile__name">Vishal Wadnere</h2>
+                <h3 class="profile__profession">Web Developer</h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+
+                </ul>
+
+                <div class="profile__info grid">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus minima aliquid dolore
+                        excepturi
+                        ab soluta facere vitae, repellendus quia suscipit unde dolores illum placeat enim, sequi
+                        recusandae
+                        maiores architecto!</p>
+                </div>
+
+                <div class="profile__buttons">
+                    <a download="" href="vishal.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <a href="https://wa.me/8169798948" target="_blank" class="button button__small button-gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!------------------main section----------------------------- -->
+    <main class="main">
+        <section class="filters container">
+
+            <!---------------------filter tab--------------------------------->
+            <ul class="filters__content ">
+                <button class="filters__button filter-tab-active" data-target="#projects">
+                    Projects
+                </button>
+
+                <button class="filters__button" data-target="#skills">
+                    Skills
+                </button>
+            </ul>
+
+
+            <div class="filters__sections">
+
+                <!--------------------projects--------------------------------- -->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <article class="projects__card">
+                        <img src="project1.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Portfolio Website</h3>
+                                <a href="http://127.0.0.1:5500/" target="_blank"
+                                    class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="project2.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Ecommerce</h3>
+                                <a href="https://vishalwadnere1.github.io/peparplate.github.io/" class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!---------------------skills-----------------------------------  -->
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Frontend
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills--level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills--level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills--level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group2">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills--level">Intermediate</span>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Backend
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">python</h3>
+                                        <span class="skills--level">Basic</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="skills--level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!----------------------footer----------------------------------- -->
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169; Vishal Wadnere. All rigths reserved
+        </span>
+
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
